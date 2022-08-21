@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Moto GP 2023</title>
+</head>
+
+<body>
+    <!-- Hero Area Start-->
+    <header>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
+            <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl bg-black">
+                Accounting</h1>
+            
+        </div>
+    </header>
+    <!-- Hero Area End-->
+    <!-- Main Area Start -->
+    <main>
+        <!-- Player Card Area Start -->
+        <section>
+
+        </section>
+        <!-- Player Card Area End -->
+
+
+        <aside class="bg-neutral-900 text-white w-9/12 mx-auto mt-12 p-8">
+            <div class="bg-black p-4 text-lg">
+                <h3 class="text-4xl font-semibold text-center">Budget</h3>
+                <div>
+                    <div class=" mt-5 w-6/12 mx-auto flex flex-col justify-center  ">
+                        <div class="flex flex-row justify-between">
+                            <div class=" font-medium text-gray-400">Per Player</div>
+                            <input id="per-player-budget-field" class="text-black border" type="text">
+                        </div>
+                        <button id="btn-Calculate"
+                            class="bg-sky-600 px-12 py-2.5 text-2xl font-semibold mt-5">Calculate</button>
+                    </div>
+                    <div class=" mt-5 w-6/12 mx-auto flex flex-col justify-center  ">
+                        <div class="flex flex-row justify-between">
+                            <div class="font-medium text-gray-400">Player Expenses</div>
+                            <div class="">$<span id="player-expenses">00</span></div>
+                        </div>
+                        <div class="flex flex-row mt-5 justify-between ">
+                            <div class=" font-medium text-gray-400">Manager</div>
+                            <input id="manager-field" class="text-black border" type="text">
+                        </div>
+                        <div class="flex flex-row mt-5 justify-between">
+                            <div class=" font-medium text-gray-400">Coach</div>
+                            <input id="coach-field" class="text-black border" type="text">
+                        </div>
+                        <button id="btn-calculate-total"
+                            class="bg-sky-600 px-12 py-2.5 text-2xl font-semibold mt-5">Calculate Total</button>
+                        <div class="flex flex-row justify-between mt-5">
+                            <div class="font-medium text-gray-400">Total</div>
+                            <div class="text-red-400">$<span id="total">00</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </aside>
+    </main>
+    <!-- Main Area End -->
+    <script src="js/budget.js"></script>
+</body>
+
+</html>
