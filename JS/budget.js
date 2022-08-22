@@ -41,6 +41,9 @@ btnCalculate.addEventListener('click', function(){
     const perPlayerField = getInputFieldValueById('per-player-budget-field');
     const playerEpensesElement = getTextElementValueById('player-expenses');
 
+
+    
+
     // count List Item from Un-ordered List
     const listItem = document.getElementsByTagName('li');
     const count = listItem.length;
@@ -76,8 +79,7 @@ btnCalculateTotal.addEventListener('click', function(){
     
     // const total = totalExpenses + expensesMangerAndCoach;
 
-
-
+    
     setTextElementValueById('total', total);
 
 
