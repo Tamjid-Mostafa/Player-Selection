@@ -60,11 +60,11 @@
                 </div>
                 <div class="p-5 ">
                     <div >
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lionel Messi
+                        <h5 id="player-name"  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lionel Messi
                         </h5>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">36 Goals · 120 assists</p>
-                    <button id="select" 
+                    <button  
                         class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 px-10">
                         Select
                     </button>
@@ -84,7 +84,7 @@
                         </h5>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">36 Goals · 120 assists</p>
-                    <button id="select" 
+                    <button id="select3" 
                         class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 px-10">
                         Select
                     </button>
@@ -103,7 +103,7 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Neymar Jr</h5>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">36 Goals · 120 assists</p>
-                    <button  id="select" 
+                    <button  id="select4" 
                         class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 px-10">
                         Select
                     </button>
@@ -123,7 +123,7 @@
                         </h5>
                     </div>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">36 Goals · 120 assists</p>
-                    <button id="select"  
+                    <button id="select5"  
                         class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 px-10">
                         Select
                     </button>
@@ -157,17 +157,20 @@
 
         <!-- Aside Panel Start -->
 
-        <buttonside class=" text-white  mx-auto grid grid-rows-2 gap-5 col-span-1">
+        <section class=" text-white  mx-auto grid grid-rows-3  gap-5 col-span-1">
 
             <!-- Selection of Player Section Start -->
 
-            <div class="bg-black p-4 text-lg">
+            <div class="bg-black p-4 text-lg row-span-1">
                 <h3 class="text-2xl font-semibold text-center">Selected Player</h3>
-                <div>
-                    <div class=" mt-5 mx-auto grid grid-col-1  ">
-
-                    </div>
-
+                <div class="flex flex-col items-center mt-5">
+                    <ul id="player-list ">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ul>
                 </div>
 
             </div>
@@ -176,7 +179,7 @@
 
             <!-- Budget Section Start -->
 
-            <div class="bg-black p-4 text-lg ">
+            <div class="bg-black p-4 text-lg row-span-1">
                 <h3 class="text-4xl font-semibold text-center">Budget</h3>
                 <div>
                     <div class=" mt-5 mx-auto grid grid-col-1  ">
@@ -184,7 +187,7 @@
                             <div class="mr-2 font-medium text-gray-400">Per Player</div>
                             <input id="per-player-budget-field" class="text-black border" type="text">
                         </div>
-                        <button id="btn-Calculate"
+                        <button id="btn-calculate"
                             class="bg-sky-600 px-12 py-2.5 text-2xl font-semibold mt-5">Calculate</button>
                     </div>
                     <div class=" mt-5 mx-auto flex flex-col justify-center  ">
@@ -214,7 +217,7 @@
 
             <!-- Budget Section End -->
 
-        </buttonside>
+        </section>
 
         <!-- Aside Panel End  -->
 

@@ -4,11 +4,11 @@ function getInputFieldValueById(inputFieldId){
     const input = parseFloat(inputFieldString);
 
     if(inputField.value === '' || inputField.value === null){
-        alert('Per Player Field should not be Blank');
+        alert('Field should not be Blank');
         return false;
     }
-    else if(isNaN(inputField.value)){
-        alert('please provide number');
+    else if(isNaN(inputField.value) || inputField.value <= 0){
+        alert('please provide positive number');
         return false;
     }
 
@@ -28,18 +28,30 @@ function setTextElementValueById(elementId, newValue){
     textElement.innerText = newValue;
 }
 
+// Dom Selection 
+
+const btnCalculate = document.getElementById('btn-calculate');
+const btnCalculateTotal = document.getElementById('btn-calculate-total');
 
 
 
 
 
-
-
-
-document.getElementById('btn-Calculate').addEventListener('click', function(){
+btnCalculate.addEventListener('click', function(){
     const perPlayerField = getInputFieldValueById('per-player-budget-field');
     const playerEpensesElement = getTextElementValueById('player-expenses');
-    const totalPlayerExpenses = perPlayerField + playerEpensesElement;
+
+    // count List Item from Un-ordered List
+    const listItem = document.getElementsByTagName('li');
+    const count = listItem.length;
+
+    const totalPlayerBudget = perPlayerField * count;
+    const totalPlayerExpenses = totalPlayerBudget + playerEpensesElement;
+
+
+    
+    
+
 
     setTextElementValueById('player-expenses', totalPlayerExpenses);
 
@@ -48,10 +60,14 @@ document.getElementById('btn-Calculate').addEventListener('click', function(){
     
 })
 
-document.getElementById('btn-calculate-total').addEventListener('click', function(){
+
+
+
+
+btnCalculateTotal.addEventListener('click', function(){
     const managerExpenseField = getInputFieldValueById('manager-field');
     const coachExpenseField = getInputFieldValueById('coach-field');
-    const totalExpenses = getTextElementValueById('total');
+    // const totalExpenses = getTextElementValueById('total');
     
     const expensesMangerAndCoach = managerExpenseField + coachExpenseField;
 
