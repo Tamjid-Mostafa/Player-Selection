@@ -28,11 +28,10 @@ let players = document.getElementsByClassName('player-btn');
         const li = document.createElement('li');
 
         //  Condition for not select more than 5 Players
-        
-        if(list.childNodes.length === 5){
+
+        if(list.childNodes.length >= 5){
             alert('Not more than 5 players');
-            players.disabled = true;
-            
+           
             return;
         }
 
