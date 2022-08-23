@@ -1,11 +1,17 @@
+
+// Select Players Name and Listed into the Select list.
+
+
 let players = document.getElementsByClassName('player-btn');
 
-
+// Adding loop to the buttons
 
     for (i=0; i < players.length; i++){
         players[i].addEventListener('click', addPlayers);
         
     }
+    // Declaring function for Click event and getting Inner Text from the Element 
+
     function addPlayers(event){
         const players = event.target;
         players.disabled = true;
@@ -18,19 +24,18 @@ let players = document.getElementsByClassName('player-btn');
     const list = document.getElementById('player-list');
     
     function addPlayersName(playerName){
-            
-        // console.log(addSelectList);
         
-        
-    
         const li = document.createElement('li');
 
-        
+        //  Condition for not select more than 5 Players
         
         if(list.childNodes.length === 5){
             alert('Not more than 5 players');
+            players.disabled = true;
+            
             return;
         }
+
         
 
         li.innerText = playerName;

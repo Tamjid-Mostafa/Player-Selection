@@ -12,7 +12,7 @@ function getInputFieldValueById(inputFieldId){
         return false;
     }
 
-    // inputField.value = '';
+    
     return input;
 }
 
