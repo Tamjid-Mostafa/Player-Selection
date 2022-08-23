@@ -47,12 +47,16 @@ btnCalculate.addEventListener('click', function(){
     // count List Item from Un-ordered List
     const listItem = document.getElementsByTagName('li');
     const count = listItem.length;
+    
 
     const totalPlayerBudget = perPlayerField * count;
     const totalPlayerExpenses = totalPlayerBudget + playerEpensesElement;
 
 
-    
+    if(count === 0){
+        alert('Please Select Players First');
+        return;
+    }
     
 
 
